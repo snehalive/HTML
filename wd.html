@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-variant: small-caps;
+        font-size: 205%;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: narrower;
+        font-variant-position: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Using Document.write()</h1>
+    <p>
+      using <strong>Document.write()</strong> after an html document is loaded ,
+      will delete all existing HTML
+    </p>
+    <p>
+      For testing purposes, it is convenient to use <em>Document.write()</em>
+    </p>
+    <p>
+      Never call document.write after the document has finished loading. It will
+      overwrite the whole document.
+    </p>
+    <main>
+      <br />
+      <!-- This BR slash tag is used for gap between text and pictures -->
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Coursera-Logo_600x600.svg/1200px-Coursera-Logo_600x600.svg.png"
+        alt="Coursera"
+        width="10%"
+       /> 
+       <!-- img with link , when u slect on img link will be open  -->
+      <br />
+      <a href="http://www.google.com"
+        ><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Coursera-Logo_600x600.svg/1200px-Coursera-Logo_600x600.svg.png"
+          width="10%"
+      /></a>
+    </main>
+    <script>
+      document.write(5 + 6);
+    </script>
+  </body>
+</html>
